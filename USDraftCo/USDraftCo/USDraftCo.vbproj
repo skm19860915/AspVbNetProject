@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>USDraftCo</RootNamespace>
+    <AssemblyName>USDraftCo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Admin\assets\css\alpha.css" />
+    <Content Include="Admin\assets\css\alpha.min.css" />
+    <Content Include="Admin\assets\css\custom.css" />
+    <Content Include="Admin\assets\images\profile-image.png" />
+    <Content Include="Admin\assets\images\profile_bg.png" />
+    <Content Include="Admin\assets\js\alpha.js" />
+    <Content Include="Admin\assets\js\alpha.min.js" />
+    <Content Include="Admin\assets\js\custom.js" />
+    <Content Include="Admin\assets\js\pages\table-data.js" />
+    <Content Include="Admin\assets\plugins\datatables\css\jquery.dataTables.css" />
+    <Content Include="Admin\assets\plugins\datatables\css\jquery.dataTables.min.css" />
+    <Content Include="Admin\assets\plugins\datatables\css\jquery.dataTables_themeroller.css" />
+    <Content Include="Admin\assets\plugins\datatables\images\favicon.ico" />
+    <Content Include="Admin\assets\plugins\datatables\images\Sorting icons.psd" />
+    <Content Include="Admin\assets\plugins\datatables\images\sort_asc.png" />
+    <Content Include="Admin\assets\plugins\datatables\images\sort_asc_disabled.png" />
+    <Content Include="Admin\assets\plugins\datatables\images\sort_both.png" />
+    <Content Include="Admin\assets\plugins\datatables\images\sort_desc.png" />
+    <Content Include="Admin\assets\plugins\datatables\images\sort_desc_disabled.png" />
+    <Content Include="Admin\assets\plugins\datatables\js\jquery.dataTables.js" />
+    <Content Include="Admin\assets\plugins\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-blockui\blockUI.jquery.json" />
+    <Content Include="Admin\assets\plugins\jquery-blockui\bower.json" />
+    <Content Include="Admin\assets\plugins\jquery-blockui\composer.json" />
+    <Content Include="Admin\assets\plugins\jquery-blockui\jquery.blockui.js" />
+    <Content Include="Admin\assets\plugins\jquery-blockui\README.md" />
+    <Content Include="Admin\assets\plugins\jquery-validation\additional-methods.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\additional-methods.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\jquery.validate.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\jquery.validate.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ar.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ar.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_bg.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_bg.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_bn_BD.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_bn_BD.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ca.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ca.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_cs.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_cs.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_da.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_da.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_de.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_de.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_el.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_el.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_es.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_es.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_es_AR.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_es_AR.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_es_PE.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_es_PE.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_et.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_et.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_eu.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_eu.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_fa.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_fa.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_fi.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_fi.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_fr.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_fr.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ge.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ge.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_gl.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_gl.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_he.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_he.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_hr.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_hr.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_hu.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_hu.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_hy_AM.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_hy_AM.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_id.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_id.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_is.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_is.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_it.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_it.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ja.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ja.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ka.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ka.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_kk.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_kk.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ko.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ko.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_lt.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_lt.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_lv.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_lv.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_my.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_my.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_nl.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_nl.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_no.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_no.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_pl.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_pl.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_pt_BR.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_pt_BR.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_pt_PT.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_pt_PT.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ro.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ro.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ru.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_ru.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_si.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_si.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sk.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sk.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sl.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sl.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sr.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sr.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sr_lat.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sr_lat.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sv.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_sv.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_th.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_th.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_tj.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_tj.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_tr.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_tr.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_uk.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_uk.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_vi.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_vi.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_zh.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_zh.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_zh_TW.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\messages_zh_TW.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_de.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_de.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_es_CL.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_es_CL.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_fi.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_fi.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_nl.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_nl.min.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_pt.js" />
+    <Content Include="Admin\assets\plugins\jquery-validation\localization\methods_pt.min.js" />
+    <Content Include="Admin\assets\plugins\jquery\jquery-2.2.0.min.js" />
+    <Content Include="Admin\assets\plugins\material-preloader\css\materialPreloader.css" />
+    <Content Include="Admin\assets\plugins\material-preloader\css\materialPreloader.min.css" />
+    <Content Include="Admin\assets\plugins\material-preloader\css\style.css" />
+    <Content Include="Admin\assets\plugins\material-preloader\js\js.js" />
+    <Content Include="Admin\assets\plugins\material-preloader\js\materialPreloader-vanilla.js" />
+    <Content Include="Admin\assets\plugins\material-preloader\js\materialPreloader.js" />
+    <Content Include="Admin\assets\plugins\material-preloader\js\materialPreloader.min.js" />
+    <Content Include="Admin\assets\plugins\materialize\css\materialize.css" />
+    <Content Include="Admin\assets\plugins\materialize\css\materialize.min.css" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Bold.eot" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Bold.ttf" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Light.eot" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Light.ttf" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Medium.eot" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Medium.ttf" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Regular.eot" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Regular.ttf" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Thin.eot" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Thin.ttf" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="Admin\assets\plugins\materialize\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="Admin\assets\plugins\materialize\js\materialize.js" />
+    <Content Include="Admin\assets\plugins\materialize\js\materialize.min.js" />
+    <Content Include="Admin\assets\plugins\materialize\LICENSE" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Details.aspx" />
+    <Content Include="Calculator.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\custom.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\styles.css" />
+    <Content Include="css\grid_16.css" />
+    <Content Include="css\loader.gif" />
+    <Content Include="css\loaderWhite.gif" />
+    <Content Include="css\nextPageArrow.gif" />
+    <Content Include="css\nextPageArrowWhite.gif" />
+    <Content Include="css\prevPageArrow.gif" />
+    <Content Include="css\prevPageArrowWhite.gif" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\superfish.css" />
+    <Content Include="css\white.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Fireplace.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GeneratorBeta.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Images\fan1.jpg" />
+    <Content Include="Images\fan2.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\no-image.jpg" />
+    <Content Include="Images\small_pdf_icon.jpg" />
+    <Content Include="js\Cicle_Fina.js" />
+    <Content Include="js\cufon-replace.js" />
+    <Content Include="js\cufon-yui.js" />
+    <Content Include="js\galleria-1.2.3.js" />
+    <Content Include="js\galleria-1.2.3.min.js" />
+    <Content Include="js\imagepreloader.js" />
+    <Content Include="js\jquery-1.3.2.js" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery.faded-options.js" />
+    <Content Include="js\jquery.faded.js" />
+    <Content Include="js\jquery.galleriffic.js" />
+    <Content Include="js\jquery.googlemaps1.01.js" />
+    <Content Include="js\jquery.history.js" />
+    <Content Include="js\jquery.opacityrollover.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\jush.js" />
+    <Content Include="js\loopedslider.js" />
+    <Content Include="js\superfish.js" />
+    <Content Include="js\tabs.js" />
+    <Content Include="js\themes\classic\classic-demo.html" />
+    <Content Include="js\themes\classic\classic-loader.gif" />
+    <Content Include="js\themes\classic\classic-map.png" />
+    <Content Include="js\themes\classic\galleria.classic.css" />
+    <Content Include="js\themes\classic\galleria.classic.js" />
+    <Content Include="js\themes\classic\galleria.classic.min.js" />
+    <Content Include="KW-Calc\KWSimple.aspx" />
+    <Content Include="KW-Calc\KWSimplePrint.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Resources\Island.png" />
+    <Content Include="Resources\Penensula.png" />
+    <Content Include="Resources\Round.png" />
+    <Content Include="Resources\Seethrough.png" />
+    <Content Include="Resources\single.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Authentication.config" />
+    <Content Include="Admin\Site.Master" />
+    <None Include="My Project\PublishProfiles\FTPProfile.pubxml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Signup.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.vb">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.vb">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Details.aspx.designer.vb">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Details.aspx.vb">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Calculator.aspx.designer.vb">
+      <DependentUpon>Calculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calculator.aspx.vb">
+      <DependentUpon>Calculator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fireplace.aspx.designer.vb">
+      <DependentUpon>Fireplace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fireplace.aspx.vb">
+      <DependentUpon>Fireplace.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="GeneratorBeta.aspx.designer.vb">
+      <DependentUpon>GeneratorBeta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratorBeta.aspx.vb">
+      <DependentUpon>GeneratorBeta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="KW-Calc\KWSimple.aspx.designer.vb">
+      <DependentUpon>KWSimple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KW-Calc\KWSimple.aspx.vb">
+      <DependentUpon>KWSimple.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="KW-Calc\KWSimplePrint.aspx.designer.vb">
+      <DependentUpon>KWSimplePrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KW-Calc\KWSimplePrint.aspx.vb">
+      <DependentUpon>KWSimplePrint.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.vb">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.vb">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1037</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58850/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

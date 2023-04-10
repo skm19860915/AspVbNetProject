@@ -1,0 +1,697 @@
+
+/* Global properties ======================================================== */
+body { 
+	background: url(../images/body-bg.jpg) top center no-repeat; 
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 13px; 
+	line-height: 18px;
+	color: #5d6467;
+	min-width: 1000px;
+}
+html, body {height: 100%;}
+
+p {padding-top: 18px;}
+
+.top {padding-top: 5px !important;}
+.top1 {padding-top: 13px;}
+.top2 {padding-top: 18px;}
+.top3 {padding-top: 20px;}
+.top4 {padding-top: 30px;}
+.top5 {padding-top: 35px;}
+
+.bot {padding-bottom: 46px;}
+.bot_1 {padding-bottom: 28px;}
+.bot_2 {padding-bottom: 35px;}
+.bot_3 {padding-bottom: 19px;}
+.bot_4 {padding-bottom: 57px;}
+
+.h-top {padding-top: 10px;}
+.h-top1 {padding-top: 15px;}
+
+.overflow {overflow: hidden; display: block;}
+
+a {color: #5d6467; outline: none;}
+a:hover{text-decoration: none;}
+
+strong {color: #5d6467;}
+
+figure {padding: 0px 0 0px;}
+.figure-pad {padding: 23px 0 16px;}
+/* Global Structure ============================================================= */
+.main {
+	margin: 0 auto;
+	
+}
+
+	/* Header */
+	header{
+		height: 135px;
+		position: relative;
+		z-index: 2;
+	}
+		
+	/* Content */
+	section#content {
+		position: relative;
+		z-index: 1;
+	}			
+	/* Footer */
+	footer{
+		height: 77px;
+	}
+/* Left & Right alignment */
+
+.fleft { float: left;}
+.fright { float: right;}
+.clear { clear: both;}
+
+.col-1, .col-2, .col-3, .col-4, .col-5 {float: left;}
+
+.alignright {text-align: right;}
+.aligncenter {text-align: center;}
+
+.wrapper { 
+	width: 100%;
+	overflow: hidden;
+}
+.container {
+	width: 100%;
+}
+/*----- form defaults -----*/
+input, select, textarea { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+/*----- other -----*/
+.img-indent {margin: 0 18px 0 0; float: left;}
+.img_indent {margin: 0 0px 0 18px; float: right;}
+.extra-wrap {overflow: hidden;}
+
+/*=============================================================================== text =====*/
+h1 {
+	padding: 23px 0 26px 1px;
+	position: relative;
+	float: left;
+}
+	h1 a {
+		display: block;
+		height: 59px;
+		width: 260px;
+		text-indent: -5000px;
+		 text-decoration:none;
+	}
+h2 {
+	font-size: 25px;
+	line-height: 1.2em;
+	color: #1a2029;
+	padding: 10px 0px 7px 0px;
+	font-weight: normal;
+	letter-spacing: 0px
+}
+	h2 span {
+		display: block;
+		margin-top: -18px
+	}
+h3 {
+	font-size: 15px;
+	line-height: 18px; 
+	text-transform: uppercase;
+	color: #5d6467;
+	font-weight: normal;
+	padding-bottom: 4px;
+}
+
+.colgrey {color: #9ea4a7;}
+/*=================================================================================================================== header =====*/
+.extra-bottom {
+	background: url(../images/extra-bottom-bg.png) bottom center no-repeat;
+	height: 15px;
+}
+.extra {background: url(../images/extra-bg.gif) top center repeat-y; width: 100%;}
+/*=============================================================================== nav =====*/
+
+/*=================================================================================================================== content =====*/
+
+/*=============================================================================== indents =====*/
+.indent {padding: 0px 0px 0px 0px}
+.indent1 {padding: 0px 0px 0px 0px}
+/*=============================================================================== col-indents =====*/
+.col-indent {padding-right: 0px;}
+.col-indent1 {padding-right: 0px;}
+
+/*=============================================================================== line-hor =====*/
+.hr {
+	background: url(../images/hr-bg.gif) left bottom repeat-x;
+	padding-bottom: 19px; 
+	height: 1px;
+	display: block;
+	margin: 0 5px 20px;
+}
+
+.divider {background:url(../images/divider-bg.gif) 230px 0px repeat-y;}
+.divider1 {background:url(../images/divider-bg.gif) 470px 0px repeat-y;}
+.divider2 {background:url(../images/divider-bg.gif) 710px 0px repeat-y;}
+/*=============================================================================== lists =====*/
+.price {padding: 13px 0 0;}
+	.price li {
+		background: url(../images/price-li-bg.gif) left bottom repeat-x;
+		line-height: 30px;
+		
+	}
+		.price li a{
+			display: block;
+			overflow:hidden;
+			color: #5d6467;
+			text-decoration: none;
+			padding: 0 11px;
+		}
+			.price li span {
+				float: right;
+			}
+			.price li a:hover {background: #252d3b; color: white;}
+			.price .pad {padding: 0 11px}
+			.price {}
+
+
+.data-list_1 {}
+	.data-list_1 li
+{
+    width: 100%;
+    overflow: hidden;
+    padding: 6px 0 24px;
+    color: #888888;
+}
+		.data-list_1 li img {
+			float: left;
+			margin-right: 10px
+		}
+		.data-list_1 h3 {padding-top: 4px;}
+		.data-list_1 li p {padding-top: 10px;}
+		.data-list_1 li a {
+			font-style: italic;
+		}
+		
+	.list_1-pad-li li {padding-bottom: 5px !important;}
+	
+	.data-list_1_img-pad {padding: 9px 0 0;}
+	.data-list_1_img-pad li {padding-bottom: 16px;}
+		.data-list_1_img-pad img {margin-right: 18px !important; padding-top: 8px;}
+		.data-list_1_img-pad strong {color: #9ea4a7;}
+		.data-list_1_img-pad a {
+			display: inline-block;
+			margin-top: 3px;
+		}
+	.data-list_1-pad {padding: 17px 0 0;}
+		.data-list_1-pad li {padding: 6px 0 14px;}
+			.data-list_1-pad li p {padding-top: 0px;}
+	
+
+.data-list {padding-bottom: 13px;}
+	.data-list li {width: 100%;	overflow: auto; padding: 26px 0 1px;}
+		.data-list li img {
+			float: left;
+			margin: 4px 20px 0 45px;
+		}
+		.data-list div {
+			overflow: auto;
+			color: #9ea4a7;
+		}
+		.data-list li a {
+			text-transform: uppercase;
+			font-size: 15px;
+			line-height: 18px;
+			color: #5d6467;
+			text-decoration: none;
+			display: inline-block;
+			padding-bottom: 4px;
+		}
+			.data-list li a:hover {text-decoration: underline;}
+
+.list_1 {margin-bottom: -3px;}
+.list_1 li {background: url(../images/list-bg.gif) 0 0 no-repeat;
+		padding: 0px 0 0px 29px;
+		margin: 0px 0 0;
+		color: #9ea4a7;}
+.list_1 li div {overflow:auto;}
+.list_1 li a {font-size: 15px;
+			line-height: 18px;
+			color: #5d6467;
+			text-transform: uppercase;
+			text-decoration: none;
+			display: inline-block;
+			padding-bottom: 4px;}
+.list_1 li a:hover {text-decoration: underline;}
+
+.list_2 {margin-bottom: -3px;}
+.list_2 li {background: url(../images/pagination-a-bg.gif) 0 0 no-repeat;
+		padding: 0px 0 0px 29px;
+		margin: 19px 0 0;
+		color: #9ea4a7;}
+.list_2 li div {overflow: auto;}
+.list_2 li a {font-size: 15px;
+			line-height: 18px;
+			color: #5d6467;
+			text-transform: uppercase;
+			text-decoration: none;
+			display: inline-block;
+			padding-bottom: 4px;}
+.list_2 li a:hover {text-decoration: underline;}
+
+
+.list {padding: 12px 0 2px;}
+	.list li {
+		line-height: 30px;
+		height: 30px;
+	}
+		.list li a {
+			color: #9ea4a7;
+			padding-bottom: 2px;
+			display: inline-block;
+			background: url(../images/list-bg.gif) 0 11px no-repeat;
+			padding-left: 30px;
+		}
+			.list li a:hover {
+				
+			}
+.list1 {padding: 16px 0 2px;}
+	.list1 li {
+		line-height: 30px;
+		height: 30px;
+	}
+		.list1 li a {
+			color: #9ea4a7;
+			padding-bottom: 2px;
+			display: inline-block;
+			background: url(../images/list-bg.gif) 0 7px no-repeat;
+			padding-left: 30px;
+		}
+			.list1 li a:hover {
+				
+			}
+/*=============================================================================== links =====*/
+.link {
+	font-style: italic;
+	color: #5d6467;
+	display: inline-block;
+	margin-top: 9px;
+}
+
+.button {
+	background: url(../images/button-left-bg.gif) left top no-repeat; 
+	display: inline-block;
+	text-decoration: none;
+	margin: 14px 0 0 0px;
+	color: #696969; 
+	cursor: pointer;
+	font-size: 11px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+	.button span {
+		background: url(../images/button-right-bg.gif) right top no-repeat;
+		display: inline-block; 
+		padding: 0 6px 0 6px;
+	}
+	.button span span  {
+		background: url(../images/button-tail-bg.gif) top repeat-x;
+		padding: 6px 8px 7px 9px;
+	}
+
+.button:hover {background: url(../images/button-left-bg-hover.gif) left top no-repeat; }
+.button:hover span {background: url(../images/button-right-bg-hover.gif) right top no-repeat;}
+.button:hover span span  {background: url(../images/button-tail-bg-hover.gif) top repeat-x;}
+/*=============================================================================== contact =====*/
+.bb {border-bottom: 1px solid #d7d9da;}
+	.contact {
+		float: right;
+		font-size: 10px;
+		color: #aaacad;
+		text-transform: uppercase;
+		padding: 5px 0 5px;
+	}
+		.contact a {
+			color: #aaacad;
+			text-decoration: none;
+			background: url(../images/contact-a-bg.gif) 0 3px no-repeat;
+			padding-left: 15px;
+		}
+			.contact a:hover {text-decoration: underline;}
+		.contact span {
+			background: url(../images/contact-span-bg.gif) 0px 2px no-repeat;
+			padding-left: 18px;
+			margin-right: 27px;
+		}
+/*=============================================================================== data =====*/
+.data {padding: 12px 0 10px;}
+	.data .wrapper div {overflow: hidden; padding: 15px 0 15px;}
+		.data img {
+			float: left;
+			margin: 15px 18px 0 0;
+			padding-top: 4px;
+		}
+		.data span {
+			display: block;
+			overflow: hidden;
+		}
+/*=============================================================================== contacts =====*/
+.contacts {color: #111111; font-size:16px}
+	.contacts img {padding: 23px 0 0;}
+	.contacts p {
+		text-transform: uppercase;
+		font-size: 16px;
+		color: #5d6467;
+		padding: 26px 0 4px;
+	}
+	.contacts span {
+		display: inline-block;
+		vertical-align: baseline;
+		width: 95px;
+	}
+	.contacts a {
+		font-weight: bold;
+		text-decoration: none;
+		color: #9ea4a7;
+	}
+		.contacts a:hover {text-decoration: underline;}
+		
+
+/*=============================================================================== gallery =====*/
+.gallery {width: 100%; overflow: hidden; padding: 13px 0 28px;}
+	.gallery img {
+		float: left;
+		margin: 10px 10px 0 0;
+	}
+/*=============================================================================== date =====*/
+.date {padding: 12px 0 5px 5px;}
+	.date span {
+		font-size: 17px;
+		line-height: 24px;
+		color: #353c47;
+		text-shadow: 1px 0 #6b7078;
+		display: inline-block;
+		padding: 0 7px;
+	}
+	.date img {padding: 4px 0 0;}
+
+/*=============================================================================== calendar =====*/
+.calendar {
+	width: 184px;
+	height: 196px;
+	position: absolute;
+	left: 10px;
+	top: 317px;
+}
+	.calendar ul {overflow: hidden; border: 1px solid #edecea;}
+		.calendar li {
+			float: left;
+			text-align: center;
+			width: 26px;
+			height: 24px;
+			font-size: 11px;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.calendar li strong {color: #353c47;}
+		.calendar li a {
+			display: block;
+			text-decoration: none;
+			border-top: 1px solid #edecea;
+			border-left: 1px solid #edecea;
+			padding: 2px 0 2px;
+		}
+			.calendar li a:hover, .calendar .active {
+				background: url(../images/calendar-a-bg.gif) 2px 3px no-repeat;
+				color: white;
+			}
+		*+ html .calendar li a:hover {background: url(../images/calendar-a-bg.gif) 2px 1px no-repeat;
+				color: white;}
+		*+ html .calendar .active {background: url(../images/calendar-a-bg.gif) 2px 1px no-repeat;
+				color: white;}
+		
+		.calendar .bg {background: #ecebe9; border-left: 1px solid #dddbd8; width: 25px;}
+		.calendar .bg1 {background: #ecebe9; border-left: none; width: 26px;}
+		
+		.calendar .display:hover {cursor: text; background: none;}
+		
+		.calendar .border-left {border-left: none;}
+
+/*=================================================================================================================== footer =====*/
+footer {text-transform: uppercase; color: white;}
+	footer p {
+		float: left;
+		padding: 27px 0 0 2px;
+	}
+		footer p a {
+			text-decoration: none; color: white;
+		}
+			footer p a:hover {text-decoration: underline;}
+	footer span {
+		display: block;
+		padding: 27px 2px 0 0;
+		float: right;
+	}
+
+
+/*==========================================*/
+#faded {position:relative; overflow:hidden; margin: 20px 0 0 0; background: url(../images/faded-bg.gif) 0 0 no-repeat;}
+#faded { width:100%; height:507px;}
+	#faded img {
+		float:left;
+	}
+	#faded strong {
+		float: right;
+		color: white;
+		width: 308px;
+		font-size: 40px;
+		line-height: 1.2em;
+		text-transform: uppercase;
+		padding: 121px 0 0 0;
+		 background: url(../images/faded-bg.gif) right top no-repeat;
+	}
+		#faded strong span {
+			display: block;
+			margin-top: -12px;
+		}
+	ul.faded li {
+		width: 100%;
+		position: relative;
+	}
+		ul.faded li a {
+			position: absolute;
+			right: 216px;
+			top: 264px;
+			display: block;
+			background: url(../images/ul.faded-a-bg.gif) 0 0 no-repeat;
+			height: 27px;
+			width: 89px;
+			text-align: center;
+			font-size: 11px;
+			line-height: 20px;
+			color: #1a1f28;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding-top: 6px;
+		}
+			ul.faded li a:hover {color: #8b8f95;}
+			ul.faded li b {
+				position: absolute;
+				left: 436px;
+				bottom: -54px;
+				font-size: 13px;
+				line-height: 16px;
+				color: #7b7e7f;
+				display: block;
+				font-weight: normal;
+			}
+	#faded ul li {
+	}
+		#faded  ul.pagination {
+		list-style:none;
+		padding:0;
+		margin:0;
+		z-index:10;
+		position:absolute;
+		bottom:17px;
+		right: 0px;
+		width: 92px;
+	}
+		#faded  ul.pagination li {
+			position:relative;
+			float:left;
+			padding-right: 1px;
+			font-size: 0;
+			line-height: 0;
+		}
+			#faded  ul.pagination li a {
+				display:block;		
+				color:#fff;						
+				text-decoration: none;
+				width: 17px;
+				height: 17px;
+				background: url(../images/pagination-a-bg.gif) 0 0 no-repeat;
+				font-size: 0;
+				line-height: 0;
+			}
+			.faded li b {
+				background:#fff;
+			}
+			#faded  ul.pagination li.current a {
+				left:0px;
+				color:#fff;
+				display:block;
+				background: url(../images/pagination-a-bg-hover.gif) 0 0 no-repeat;
+			}
+			#faded  ul.pagination li.last a{
+				display: none;
+			}
+
+		.click-pagination {
+			position: absolute;
+			width: 157px;
+			height: 31px;
+			left: 392px;
+			bottom: 10px;
+		}
+
+#faded .prev, #faded .next {
+	display:block;
+	width:20px;
+	height:31px;
+	position:absolute;
+	z-index:10;
+	text-decoration:none;
+}
+	#faded .prev {
+		background:url(../images/link-left-bg.gif) left top no-repeat;
+		left: 0;
+		bottom: 0px;
+	}
+		#faded .prev:hover {
+			background:url(../images/link-left-bg-hover.gif) left top no-repeat;
+		}
+	#faded .next {
+		background:url(../images/link-right-bg.gif) left top no-repeat;
+		right: 0;
+		bottom: 0px;
+	}
+		#faded .next:hover {
+			background:url(../images/link-right-bg-hover.gif) left top no-repeat;
+		}    
+
+
+.tab_content {width: 700px; overflow: hidden; float: left; margin-top: -11px;}
+
+ul.tabs {
+    margin: 0;
+    list-style: none;	
+	position: relative;
+	padding: 23px 0 0px 0;
+	width:240px;
+	overflow: hidden;
+	float: left;
+}
+ul.tabs li {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+	background: url(../images/tab-bg.gif) 0 0 no-repeat;
+	
+	font-size: 12px;
+	line-height: 32px;
+	height: 34px;
+	width: 100%;
+}
+ul.tabs li a {
+    text-decoration: none;
+	color: #5d6467;
+    display: block;
+    padding: 0 17px;
+    outline: none;
+}
+ul.tabs li a:hover {
+    background: url(../images/tab-bg-hover.gif) 0 0 no-repeat;
+	color: white;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover, html ul.tabs li.active a { /*--Makes sure that the active tab does not listen to the hover properties--*/
+    background: url(../images/tab-bg-hover.gif) 0 0 no-repeat;
+	color: white;
+}
+
+
+.box {
+	margin-bottom: 15px;
+}
+.box > .heading {
+	height: 38px;
+	padding-left: 7px;
+	padding-right: 7px;
+	border: 1px solid #DBDBDB;
+	background: url('../images/box.png') repeat-x;
+	-webkit-border-radius: 7px 7px 0px 0px;
+	-moz-border-radius: 7px 7px 0px 0px;
+	-khtml-border-radius: 7px 7px 0px 0px;
+	border-radius: 7px 7px 0px 0px;
+}
+.box > .heading h1 {
+	margin: 0px;
+	padding: 11px 0px 0px 0px;
+	color: #003A88;
+	font-size: 16px;
+	float: left;
+}
+.box > .heading h1 img {
+	float: left;
+	margin-top: -1px;
+	margin-left: 3px;
+	margin-right: 8px;
+}
+.box > .heading .buttons {
+	float: right;
+	padding-top: 7px;
+	margin-right: 5px;
+}
+.box > .heading .buttons .button {
+	margin-left: 5px;
+}
+.box > .content {
+	padding: 10px;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	min-height: 300px;
+	overflow: auto;
+}
+a.button, .list a.button {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	background: #003A88;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-khtml-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+a.button:hover
+{
+    text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	background: green;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-khtml-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#content {
+	background: #FFFFFF url('images/background.png') 0px 1px repeat-x;
+	padding: 10px 30px 0px 30px;
+	min-width: 900px;
+	padding-bottom: 128px;
+}
